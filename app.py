@@ -72,10 +72,9 @@ if question := st.chat_input("Votre question sur l'immobilier à Dubaï ou Bali.
     with st.chat_message("assistant", avatar=LOGO_PATH):
         with st.spinner("Recherche dans les vidéos..."):
             answer = ask(question)
+
         st.markdown(answer)
-
-
-        print(f"[BOT ANSWER] {result['answer']}") 
+        print(f"[BOT ANSWER] {answer}")
 
     # Sauvegarde réponse
     st.session_state.messages.append({"role": "assistant", "content": answer})
