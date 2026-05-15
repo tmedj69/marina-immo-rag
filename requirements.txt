@@ -11,4 +11,3 @@ chromadb                    # Base vectorielle locale (comme ton projet hadith)
 # === Utilitaires ===
 python-dotenv==1.0.0                # Lecture du fichier .env
 pyyaml==6.0.1                       # Lecture du fichier sources.yaml
-python-telegram-bot==21.3

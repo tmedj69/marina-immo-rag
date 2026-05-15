@@ -8,7 +8,7 @@ LOGO_PATH = "img/marina_immo.png"
 
 # Config de la page
 st.set_page_config(
-    page_title="Marina Immo - IAssine",
+    page_title="Marina Immo - IAcine",
     page_icon=LOGO_PATH,  # favicon
     layout="centered",
 )
@@ -29,7 +29,7 @@ col1, col2 = st.columns([0.13, 0.87], gap="small")
 with col1:
     st.image(LOGO_PATH, width=64)
 with col2:
-    st.markdown("## Marina Immo — IAssine pour vous servir")
+    st.markdown("## Marina Immo — IAcine pour vous servir")
     st.markdown("*Posez-moi vos questions sur l'immobilier à Dubaï et Bali*")
 
 st.divider()
@@ -47,7 +47,7 @@ if "welcomed" not in st.session_state:
     st.session_state.messages.append(
         {
             "role": "assistant",
-            "content": f"{random.choice(accroches)} Je suis IAssine, l'assistant de Marina Immo. Pose-moi une question sur l'immobilier à Dubaï ou Bali !",
+            "content": f"{random.choice(accroches)} Je suis IAcine, l'assistant de Marina Immo. Pose-moi une question sur l'immobilier à Dubaï ou Bali !",
         }
     )
     st.session_state.welcomed = True
