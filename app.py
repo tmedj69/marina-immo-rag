@@ -60,6 +60,9 @@ for message in st.session_state.messages:
 
 # Input utilisateur
 if question := st.chat_input("Votre question sur l'immobilier à Dubaï ou Bali..."):
+    
+    print(f"[USER QUESTION] {question}")  
+
     # Ajout question
     st.session_state.messages.append({"role": "user", "content": question})
     with st.chat_message("user"):
@@ -70,6 +73,9 @@ if question := st.chat_input("Votre question sur l'immobilier à Dubaï ou Bali.
         with st.spinner("Recherche dans les vidéos..."):
             answer = ask(question)
         st.markdown(answer)
+
+
+        print(f"[BOT ANSWER] {result['answer']}") 
 
     # Sauvegarde réponse
     st.session_state.messages.append({"role": "assistant", "content": answer})
