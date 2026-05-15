@@ -76,7 +76,7 @@ if question := st.chat_input("Votre question sur l'immobilier à Dubaï ou Bali.
             answer = ask(question)
 
         st.markdown(answer)
-        print(f"[BOT ANSWER] {answer}, flush=True")
+        print(f"[BOT ANSWER] {answer}", flush=True)
 
     # Sauvegarde réponse
     st.session_state.messages.append({"role": "assistant", "content": answer})
