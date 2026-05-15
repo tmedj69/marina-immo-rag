@@ -3,8 +3,6 @@ import streamlit as st
 
 from rag_chain import ask
 
-print("### APP.PY LOADED ###", flush=True)
-
 # Paths
 LOGO_PATH = "img/marina_immo.png" 
 
